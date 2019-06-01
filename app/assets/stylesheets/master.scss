@@ -5,44 +5,42 @@
 }
 
 .circle {
-    font-weight: bold;
-    font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
+    background: url(bg2.jpg);
+    border: none;
+    width: 100px;
+    height: 100px;
     margin: 10px 10px;
     text-align: center;
-    color: #FFF;
-    font-size: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: 'hindsemibold', sans-serif;
     line-height: 16px;
     cursor: pointer;
-    transform: rotate(11deg);
-    -ms-transform: rotate(11deg); /* IE 9 */
-    -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
+    transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg); /* IE 9 */
+    -webkit-transform: rotate(-11deg); /* Opera, Chrome, and Safari */
 }
 .slogan {
   /* Impact-based sans serif stack */
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
-  font-style: italic;
-  padding-top: 26px;
+  font-family: 'hindmedium', sans-serif;
 }
 
 .links {
   padding-top: 26px;
+  color: black;
 }
 
 .links a {
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
-  font-family: 'ambleregular', sans-serif;
+  font-family: 'hindsemibold', sans-serif;
   font-weight: bold;
 }
 header {
-  border-top: 9px solid #222222;
+  border-top: 30px solid #222222;
 }
 
 hr {
@@ -56,20 +54,19 @@ h1 {
 }
 
 h2 {
-  font-family: 'amblelight_condensed_italic', sans-serif;
-  font-size: 36px;
+  font-family: 'ambleregular', sans-serif;
+  font-size: 24px;
 }
 
 .next-quote {
-  color:#f84342;
-  font-family: 'ambleregular', sans-serif;
+  color:  #ebe0ad;
+  font-family: 'hindmedium', sans-serif;
   font-size:20px;
 }
 
 .footer-blurb {
  /* Impact-based sans serif stack */
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
-  font-style: italic;
+  font-family: 'ambleregular', sans-serif;
   text-align: right;
   font-size: 10px;
 }
@@ -92,9 +89,16 @@ h2 {
   font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
-h2 span {
-  color: #dddddd;
-  font-family: 'ambleregular', sans-serif;
+body {
+   background: url(bg3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+:link {
+  color: red;
 }
 
 ::selection {

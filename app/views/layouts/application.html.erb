@@ -1,30 +1,36 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<!Grid system laying out the main page of the application>
   <body>
+
+<! First column in the first row is laying out a logo, the width is set to 25 % - forget wht link_to root_path does?>
     <header class="row">
       <div class="col-3">
         <%= link_to root_path, class: 'logo' do %>
           <div class="circle">
             <br />
-            Coding is
+            Return
             <br />
-            Great
+            to the
+            <br /> 
+            Main 
             <br />
-            Fun for all
+            Page
           </div>
         <% end%>
       </div>
       <div class="col col-4-sm-4 hidden-xs-down slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2016
+        <br />
+        Share your happiness and add your favorite quote that keeps you in a good mood!
       </div>
       <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
@@ -37,7 +43,7 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div id="modal-bg" class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
@@ -61,7 +67,7 @@
 
 
 
-      <hr />
+      <hr noshade />
       <br class="clear" />
       <div class="container">
         <% if flash[:error].present? %>
@@ -75,16 +81,15 @@
       <div class="footer">
         <div class="container">
           <div  class="row">
-            <div class="col-12 col-sm-6">
-              <%= link_to "This isn't enough, I need more",root_path, class: 'next-quote' %>
+            <div class="col-12 col-sm-6 footer-blurb">
+              <%= link_to "Show me another uplifting quote",root_path, class: 'next-quote' %>
             </div>
             <div class="col-12 col-sm-6 footer-blurb">
-                Proudly hacked by <a href="https://marysmithnew2.netlify.com">Mary Smith</a><br />
-                Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+                Produced by <a href="https://marysmithnew2.netlify.com">Mary Smith</a><br />
+                Want to build your own Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
             </div>
           </div>
         </div>
       </div>
-    
   </body>
 </html>
