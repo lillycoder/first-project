@@ -24,4 +24,4 @@ module Splurty
   end
 end
 
-config.serve_static_assets = true
+
