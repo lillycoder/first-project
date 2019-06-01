@@ -23,3 +23,5 @@ module Splurty
     config.assets.precompile += %w( .svg .eot .woff .tff) 
   end
 end
+
+config.serve_static_assets = true
